@@ -87,7 +87,14 @@ PowerBI-Ecommerce-Sales-Analytics
 ├── SQL
 └── README.md
 ```
+## 📌 Business Insights
 
+- Sports category generated the highest revenue.
+- Apple was the top-performing brand by revenue.
+- Average order value was ₹12.59K.
+- Return rate was 7.5%.
+- Credit Card was the most preferred payment method.
+- The highest customer spending reached ₹157.59K.
 ---
 
 ## 👨‍💻 Author
