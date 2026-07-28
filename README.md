@@ -69,7 +69,7 @@ The project uses a normalized SQL Server database consisting of:
 
 ### Sales Dashboard
 
-![Sales Dashboard](Sales_Analaysis.png)
+![Sales Dashboard](Sales_Analysis .png)
 
 ### Customer & Returns Dashboard
 
