@@ -74,7 +74,6 @@ The project uses a normalized SQL Server database consisting of:
 ### Customer & Returns Dashboard
 
 ![Customer Dashboard](Images/customer_returns_dashboard.png)
-
 ---
 
 ## 📁 Repository Structure
