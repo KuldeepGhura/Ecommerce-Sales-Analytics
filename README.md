@@ -2,14 +2,41 @@
 
 ## 📌 Project Overview
 
-This project is an interactive Power BI dashboard built to analyze e-commerce sales performance, customer behavior, and return trends. The dashboard transforms raw transactional data into actionable business insights using SQL Server, Power BI, Power Query, and DAX.
+This project is an end-to-end E-Commerce Sales Analytics solution built using **Python, SQL Server, and Power BI**. Instead of relying on a publicly available dataset, a realistic relational dataset was synthetically generated using **Python** and the **Faker** library.
+
+The generated data was imported into SQL Server, analyzed using SQL queries, and visualized through an interactive Power BI dashboard to uncover valuable business insights related to sales performance, customer behavior, and product returns.
+
+---
+
+# 🔄 Data Generation Workflow
+
+```
+Python (Faker)
+        ↓
+Generate SQL INSERT Scripts
+        ↓
+SQL Server Database
+        ↓
+Power BI Dashboard
+```
+
+Custom Python scripts were developed to generate realistic data for:
+
+- Customers
+- Categories
+- Products
+- Orders
+- Order Details
+- Returns
 
 ---
 
 ## 🛠 Tech Stack
 
-- Microsoft Power BI
+- Python
+- Faker
 - SQL Server
+- Microsoft Power BI
 - Power Query
 - DAX
 - Microsoft Excel
@@ -18,7 +45,7 @@ This project is an interactive Power BI dashboard built to analyze e-commerce sa
 
 ## 📂 Database Design
 
-The project uses a normalized SQL Server database consisting of:
+The project uses a normalized SQL Server database consisting of six related tables:
 
 - Customers
 - Categories
@@ -31,37 +58,41 @@ The project uses a normalized SQL Server database consisting of:
 
 ## 📈 Dashboard Features
 
-### Sales Performance
+### 📊 Sales Performance
 
 - Total Revenue
 - Total Orders
 - Total Customers
 - Average Order Value
-- Top Selling Products
 - Revenue by Category
 - Monthly Revenue Trend
+- Top Selling Products
+- Revenue by Brand
 - Payment Method Analysis
 
-### Customer & Returns Analysis
+### 👥 Customer & Returns Analysis
 
-- Return Rate
 - Top Customers by Spending
-- Revenue by Brand
+- Return Rate
 - Return Reasons
 - Order Status Analysis
+- Customer Purchase Insights
 
 ---
 
 ## 💡 Skills Demonstrated
 
-- Data Cleaning
-- Data Modeling
+- Python Scripting
+- Synthetic Data Generation (Faker)
 - SQL Database Design
 - SQL Analysis Queries
-- DAX Measures
+- Data Cleaning
+- Data Modeling
 - Power Query
+- DAX
 - Interactive Dashboard Development
 - Business Intelligence
+- Data Visualization
 
 ---
 
@@ -74,6 +105,7 @@ The project uses a normalized SQL Server database consisting of:
 ### Customer & Returns Dashboard
 
 ![Customer Dashboard](Images/customer_returns_dashboard.png)
+
 ---
 
 ## 📁 Repository Structure
@@ -82,21 +114,60 @@ The project uses a normalized SQL Server database consisting of:
 PowerBI-Ecommerce-Sales-Analytics
 │
 ├── Dashboard
+│   └── Ecommerce_Sales_Analytics.pbix
+│
 ├── Dataset
-├── Images
+│   ├── Customers.xlsx
+│   ├── Categories.xlsx
+│   ├── Products.xlsx
+│   ├── Orders.xlsx
+│   ├── OrderDetails.xlsx
+│   └── Returns.xlsx
+│
+├── Python
+│   ├── 01_Generate_Customers_Categories.py
+│   ├── 02_Generate_Products.py
+│   └── 03_Generate_Orders_OrderDetails_Returns.py
+│
 ├── SQL
+│   ├── 01_Create_Database.sql
+│   ├── 02_Insert_Data.sql
+│   └── 03_Analysis_Queries.sql
+│
+├── Images
+│   ├── Sales_Analysis.png
+│   └── customer_returns_dashboard.png
+│
 └── README.md
 ```
+
+---
+
 ## 📌 Business Insights
 
 - Sports category generated the highest revenue.
-- Apple was the top-performing brand by revenue.
-- Average order value was ₹12.59K.
-- Return rate was 7.5%.
+- Apple emerged as the top-performing brand.
+- Average order value reached **₹12.59K**.
+- Return rate remained low at **7.5%**.
 - Credit Card was the most preferred payment method.
-- The highest customer spending reached ₹157.59K.
+- Highest customer spending exceeded **₹157.59K**.
+
+---
+
+## 🚀 Project Workflow
+
+1. Generated a realistic relational dataset using Python and Faker.
+2. Imported the generated data into SQL Server.
+3. Performed SQL-based data analysis and validation.
+4. Connected SQL Server with Power BI.
+5. Built interactive dashboards using Power Query and DAX.
+6. Derived business insights through data visualization.
+
 ---
 
 ## 👨‍💻 Author
 
-Kuldeep
+**Kuldeep Ghura**
+
+Electronics & Telecommunication Engineering  
+Aspiring Data Analyst
